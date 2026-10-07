@@ -1,0 +1,22 @@
+{
+	"compilerOptions": {
+		"target": "ES2022",
+		/* Deno supplies the web-platform globals, so WebWorker describes them. */
+		"lib": ["ES2022", "WebWorker"],
+		"module": "ESNext",
+		"moduleResolution": "Bundler",
+		/* Deno resolves imports by their real path, so .ts extensions are required. */
+		"allowImportingTsExtensions": true,
+		/* Structural types in lib/types.ts instead of @netlify/edge-functions. */
+		"types": [],
+		"strict": true,
+		"noUncheckedIndexedAccess": false,
+		"noImplicitOverride": true,
+		"noEmit": true,
+		"isolatedModules": true,
+		"verbatimModuleSyntax": true,
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true
+	},
+	"include": ["lib/**/*.ts", "netlify/edge-functions/**/*.ts"]
+}

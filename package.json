@@ -1,0 +1,17 @@
+{
+	"name": "netlify-ip2location-headers",
+	"version": "1.0.0",
+	"private": true,
+	"type": "module",
+	"description": "Netlify Edge Function that enriches origin requests with IP2Location.io fields Netlify's own context.geo does not provide.",
+	"scripts": {
+		"dev": "netlify dev",
+		"deploy": "netlify deploy --prod",
+		"typecheck": "tsc --noEmit",
+		"test": "bun test",
+		"live": "bun run scripts/live-check.ts"
+	},
+	"devDependencies": {
+		"typescript": "^5.6.0"
+	}
+}

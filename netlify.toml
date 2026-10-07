@@ -1,0 +1,14 @@
+[build]
+  # A publish directory is required for the site deploy that carries the function.
+  publish = "public"
+
+# Edge Functions are auto-discovered from netlify/edge-functions/.
+# Every .ts file in that directory becomes its own function, which is why the
+# implementation lives in lib/ and is imported relatively.
+#
+# The route is declared inline in ip2location-headers.ts. To control the order in
+# which several edge functions run, declare paths here instead:
+#
+#   [[edge_functions]]
+#     function = "ip2location-headers"
+#     path = "/*"
